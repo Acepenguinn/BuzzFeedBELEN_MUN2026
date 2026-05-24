@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your News Outlet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#fff;
+    color:#000;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    background:white;
+    border-bottom:1px solid #eee;
+    z-index:1000;
+}
+
+.topbar{
+    max-width:1400px;
+    margin:auto;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+.logo{
+    font-family:Montserrat,sans-serif;
+    font-size:38px;
+    font-weight:800;
+    color:#EE3322;
+}
+
+.nav{
+    display:flex;
+    gap:25px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:black;
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+}
+
+/* HERO ARTICLE */
+
+.hero{
+    max-width:1400px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero-image{
+    width:100%;
+    height:600px;
+    background:#f3f3f3;
+    border-radius:10px;
+}
+
+.category{
+    color:#EE3322;
+    font-weight:700;
+    margin-top:20px;
+}
+
+.hero-title{
+    font-family:Montserrat,sans-serif;
+    font-size:60px;
+    margin-top:10px;
+}
+
+.hero-description{
+    color:#555;
+    font-size:20px;
+    margin-top:15px;
+}
+
+/* ARTICLE GRID */
+
+.section{
+    max-width:1400px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.section-title{
+    font-family:Montserrat,sans-serif;
+    margin-bottom:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    cursor:pointer;
+}
+
+.card-image{
+    height:220px;
+    background:#f3f3f3;
+    border-radius:8px;
+}
+
+.card-category{
+    color:#EE3322;
+    margin-top:12px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.card-title{
+    font-family:Montserrat,sans-serif;
+    font-size:22px;
+    margin-top:8px;
+}
+
+.card-summary{
+    color:#666;
+    margin-top:8px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    background:#EE3322;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+    margin-top:50px;
+}
+
+.newsletter h2{
+    font-family:Montserrat,sans-serif;
+    font-size:42px;
+}
+
+.newsletter input{
+    margin-top:20px;
+    padding:12px;
+    width:300px;
+    max-width:90%;
+    border:none;
+}
+
+.newsletter button{
+    padding:12px 20px;
+    border:none;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1f1f1f;
+    color:white;
+    margin-top:60px;
+    padding:50px 20px;
+}
+
+.footer-grid{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.footer-grid h3{
+    margin-bottom:15px;
+}
+
+.footer-grid a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:8px 0;
+}
+
+@media(max-width:768px){
+
+.nav{
+    display:none;
+}
+
+.hero-title{
+    font-size:38px;
+}
+
+.hero-image{
+    height:300px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="topbar">
+
+<div class="logo">
+YOUR LOGO
+</div>
+
+<nav class="nav">
+<a href="#">NEWS</a>
+<a href="#">POLITICS</a>
+<a href="#">WORLD</a>
+<a href="#">TECH</a>
+<a href="#">CULTURE</a>
+<a href="#">MORE</a>
+</nav>
+
+</div>
+
+</header>
+
+<!-- FEATURED ARTICLE -->
+
+<section class="hero">
+
+<div class="hero-image">
+<!-- FEATURED IMAGE -->
+</div>
+
+<div class="category">
+CATEGORY
+</div>
+
+<h1 class="hero-title">
+WRITE YOUR FEATURED HEADLINE HERE
+</h1>
+
+<p class="hero-description">
+WRITE YOUR FEATURED ARTICLE DESCRIPTION HERE
+</p>
+
+</section>
+
+<!-- TRENDING ARTICLES -->
+
+<section class="section">
+
+<h2 class="section-title">
+Trending
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-image"></div>
+<div class="card-category">CATEGORY</div>
+<div class="card-title">ARTICLE TITLE</div>
+<div class="card-summary">ARTICLE SUMMARY</div>
+</div>
+
+<div class="card">
+<div class="card-image"></div>
+<div class="card-category">CATEGORY</div>
+<div class="card-title">ARTICLE TITLE</div>
+<div class="card-summary">ARTICLE SUMMARY</div>
+</div>
+
+<div class="card">
+<div class="card-image"></div>
+<div class="card-category">CATEGORY</div>
+<div class="card-title">ARTICLE TITLE</div>
+<div class="card-summary">ARTICLE SUMMARY</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+<h2>Newsletter Title</h2>
+
+<p>
+Write newsletter description here.
+</p>
+
+<input type="email" placeholder="Email Address">
+
+<button>
+Subscribe
+</button>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Section</h3>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+</div>
+
+<div>
+<h3>Section</h3>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+</div>
+
+<div>
+<h3>About</h3>
+<a href="#">Contact</a>
+<a href="#">Editorial Standards</a>
+<a href="#">Credits</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
